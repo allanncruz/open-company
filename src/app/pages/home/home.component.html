@@ -5,8 +5,8 @@
         <div class="companies-item__info">
           <img src="assets/user.png" alt="Vox Técnologia" />
           <div>
-            <h4>{{ company.name }}</h4>
-            <p>{{ company.company_name }}</p>
+            <h4>{{ company.responsible }}</h4>
+            <p>{{ company.name }}</p>
           </div>
         </div>
         <div>
@@ -14,10 +14,23 @@
         </div>
       </div>
     </div>
-    <div class="companies-content">
-      <div *ngIf="selectedCompanies">
-        {{ selectedCompanies.description }}
+    <div class="companies-content" *ngIf="selectedCompanies">
+      <h3>Detalhes do pedido</h3>
+      <div>
+        <img src="assets/user.png" alt="Vox Técnologia" />
+        {{ selectedCompanies.name }}
       </div>
+      <ul >
+        <li><b>Responsável:</b> {{ selectedCompanies.responsible }}</li>
+        <li><b>CPF:</b> {{ selectedCompanies.cpf }}</li>
+        <li><b>Endereço:</b> {{ selectedCompanies.address }}</li>
+        <li><b>Bairro:</b> {{ selectedCompanies.neighborhood }}</li>
+        <li><b>Cidade:</b> {{ selectedCompanies.city }}</li>
+        <li><b>Cep:</b> {{ selectedCompanies.cep }}</li>
+        <li><b>Complemento:</b> {{ selectedCompanies.complement }}</li>
+        <li><b>UF:</b> {{ selectedCompanies.uf }}</li>
+        <li><b>Número:</b> {{ selectedCompanies.number }}</li>
+      </ul>
     </div>
   </section>
 </div>

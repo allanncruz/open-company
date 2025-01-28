@@ -1,24 +1,52 @@
 {
   "companies": [
     {
-      "name": "Fulano de tal",
-      "company_name": "nome da empresa",
-      "description": "descrição"
+      "responsible": "Fulano de tal",
+      "name": "nome da empresa ",
+      "cpf": "999.999.999-99",
+      "address": "Nome da Rua", 
+      "neighborhood": "Nome do bairro",
+      "city": "Nome da cidade",
+      "cep": "99999-999",
+      "complement": "Complemento",
+      "uf": "PB",
+      "number": 123
     },
     {
-      "name": "Fulano de tal 2",
-      "company_name": "nome da empresa",
-      "description": "descrição 2"
+      "responsible": "Fulano de tal 2",
+      "name": "nome da empresa 2",
+      "cpf": "999.999.999-99",
+      "address": "Nome da Rua", 
+      "neighborhood": "Nome do bairro",
+      "city": "Nome da cidade",
+      "cep": "99999-999",
+      "complement": "Complemento",
+      "uf": "PB",
+      "number": 123
     },
     {
-      "name": "Fulano de tal 3",
-      "company_name": "nome da empresa",
-      "description": "descrição 3"
+      "responsible": "Fulano de tal 3",
+      "name": "nome da empresa 3",
+      "cpf": "999.999.999-99",
+      "address": "Nome da Rua", 
+      "neighborhood": "Nome do bairro",
+      "city": "Nome da cidade",
+      "cep": "99999-999",
+      "complement": "Complemento",
+      "uf": "PB",
+      "number": 123
     },
     {
-      "name": "Fulano de tal 4",
-      "company_name": "nome da empresa",
-      "description": "descrição 4"
+      "responsible": "Fulano de tal 4",
+      "name": "nome da empresa 4",
+      "cpf": "999.999.999-99",
+      "address": "Nome da Rua", 
+      "neighborhood": "Nome do bairro",
+      "city": "Nome da cidade",
+      "cep": "99999-999",
+      "complement": "Complemento",
+      "uf": "PB",
+      "number": 123
     }
   ]
 }
