@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="register-company">
+    <h2>Cadastro de Empresa</h2>
+    <form [formGroup]="companyForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Nome</label>
+        <input id="name" formControlName="name" type="text" placeholder="Nome do responsável" />
+        <small *ngIf="companyForm.get('name')?.invalid && companyForm.get('name')?.touched">
+          O nome é obrigatório e deve ter pelo menos 3 caracteres.
+        </small>
+      </div>
+  
+      <div class="form-group">
+        <label for="company_name">Nome da Empresa</label>
+        <input id="company_name" formControlName="company_name" type="text" placeholder="Nome da empresa" />
+        <small *ngIf="companyForm.get('company_name')?.invalid && companyForm.get('company_name')?.touched">
+          O nome da empresa é obrigatório.
+        </small>
+      </div>
+  
+      <div class="form-group">
+        <label for="descrição">Descrição</label>
+        <textarea id="descrição" formControlName="descrição" rows="4" placeholder="Descrição da empresa"></textarea>
+        <small *ngIf="companyForm.get('descrição')?.invalid && companyForm.get('descrição')?.touched">
+          A descrição é obrigatória e deve ter pelo menos 10 caracteres.
+        </small>
+      </div>
+  
+      <button type="submit" [disabled]="companyForm.invalid">Cadastrar Empresa</button>
+    </form>
+  </div>  
+</div>
