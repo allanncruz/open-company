@@ -17,19 +17,24 @@
   &.lg {
     font-size: 1.1rem;
     padding: 0.70rem 1.2rem;
+
+    .icon {
+      font-size: 0.90em;
+      margin-right: 3px;
+    }
   }
 
   &.md {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
+    font-size: 15px;
+    padding: 0.5rem .8rem;
+
+    .icon {
+      font-size: 14px;
+      margin-right: 1px;
+    }
   }
 
   &:hover {
     background-color: $primary-color;
-  }
-
-  &__icon {
-    font-size: 0.90em;
-    margin-right: 3px;
   }
 }

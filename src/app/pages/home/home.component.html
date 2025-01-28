@@ -1,7 +1,21 @@
-<div class="item-list">
-  <div class="item-card" *ngFor="let company of companies">
-    <h2>{{ company.name }}</h2>
-    <h4>{{ company.company_name }}</h4>
-    <p>{{ company.description }}</p>
-  </div>
+<div class="container">
+  <section class="companies">
+    <div class="companies-list">
+      <div class="companies-item" *ngFor="let company of companies">
+        <div class="companies-item__info">
+          <img src="assets/user.png" alt="Vox Técnologia" />
+          <div>
+            <h4>{{ company.name }}</h4>
+            <p>{{ company.company_name }}</p>
+          </div>
+        </div>
+        <div>
+          <app-button icon="fa-solid fa-eye" size="md">Visualizar</app-button>
+        </div>
+      </div>
+    </div>
+    <div class="companies-content">
+      description
+    </div>
+  </section>
 </div>
