@@ -9,6 +9,7 @@ import { Companies } from 'src/interface/types';
 })
 export class HomeComponent {
   companies: Companies[] = [];
+  selectedCompanies: Companies | null = null;
 
   constructor(private companiesService: CompaniesService) {}
 
@@ -16,6 +17,10 @@ export class HomeComponent {
     this.companiesService.getCompanies().subscribe((data) => {
       this.companies = data;
     });
+  }
+
+  selectCompany(company: Companies): void {
+    this.selectedCompanies = company;
   }
 
 }

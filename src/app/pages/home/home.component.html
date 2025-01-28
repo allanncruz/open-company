@@ -1,7 +1,7 @@
 <div class="container">
   <section class="companies">
     <div class="companies-list">
-      <div class="companies-item" *ngFor="let company of companies">
+      <div class="companies-item" *ngFor="let company of companies" (click)="selectCompany(company)">
         <div class="companies-item__info">
           <img src="assets/user.png" alt="Vox Técnologia" />
           <div>
@@ -15,7 +15,9 @@
       </div>
     </div>
     <div class="companies-content">
-      description
+      <div *ngIf="selectedCompanies">
+        {{ selectedCompanies.description }}
+      </div>
     </div>
   </section>
 </div>
