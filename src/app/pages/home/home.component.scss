@@ -1,0 +1,31 @@
+.item-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.item-card {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+
+  h4 {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+    color: #6c757d;
+  }
+
+  p {
+    margin: 0;
+    color: #495057;
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "companies": [
+    {
+      "name": "Fulano de tal",
+      "company_name": "nome da empresa",
+      "description": "descrição"
+    },
+    {
+      "name": "Fulano de tal 2",
+      "company_name": "nome da empresa",
+      "description": "descrição"
+    },
+    {
+      "name": "Fulano de tal 3",
+      "company_name": "nome da empresa",
+      "description": "descrição"
+    },
+    {
+      "name": "Fulano de tal 4",
+      "company_name": "nome da empresa",
+      "description": "descrição"
+    }
+  ]
+}
