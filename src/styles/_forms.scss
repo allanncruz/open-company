@@ -1,0 +1,66 @@
+.form{
+  &__label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  &__input,
+  &__select {
+    width: 100%;
+    padding: 12px;
+    background-color: #f1f3f4;
+    border: solid 1px #ccc;
+    margin-bottom: 5px;
+
+    &:focus{
+      background-color: #fff;
+    }
+  }
+
+  &__group{
+    margin-bottom: 15px;
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__inline{
+    display: flex;
+
+    > div {
+      width: 100%;
+
+      &:nth-child(1){
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__button {
+    width: 100%;
+    padding: 15px;
+    background-color: #0173bc;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+
+  &__actions{
+    display: flex;
+    
+    app-button{
+      margin-right: 10px;
+
+      button:disabled{
+        background-color: #ccc !important;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
