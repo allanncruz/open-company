@@ -8,5 +8,5 @@ export interface Companies {
   cep: string;
   complement: string;
   uf: string;
-  number: number
+  number: number;
 }

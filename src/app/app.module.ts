@@ -18,15 +18,10 @@ import { ConfirmationDialogComponent } from './components/confirmation-dialog/co
     ButtonComponent,
     HomeComponent,
     RegisterCompanyComponent,
-    ConfirmationDialogComponent
+    ConfirmationDialogComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    ReactiveFormsModule,
-    HttpClientModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

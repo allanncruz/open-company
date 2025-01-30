@@ -5,11 +5,15 @@ import { RegisterCompanyComponent } from './pages/register-company/register-comp
 
 const routes: Routes = [
   { path: '', component: HomeComponent, data: { title: 'Pedido de Abertura de empresas' } },
-  { path: 'solicitar-abertura', component: RegisterCompanyComponent, data: { title: 'Solicitar Abertura de empresas' } },
+  {
+    path: 'solicitar-abertura',
+    component: RegisterCompanyComponent,
+    data: { title: 'Solicitar Abertura de empresas' },
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

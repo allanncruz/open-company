@@ -1,4 +1,4 @@
-.form{
+.form {
   &__label {
     display: block;
     margin-bottom: 8px;
@@ -12,27 +12,27 @@
     border: solid 1px #ccc;
     margin-bottom: 5px;
 
-    &:focus{
+    &:focus {
       background-color: #fff;
     }
   }
 
-  &__group{
+  &__group {
     margin-bottom: 15px;
-    
+
     label {
       display: block;
       margin-bottom: 5px;
     }
   }
 
-  &__inline{
+  &__inline {
     display: flex;
 
     > div {
       width: 100%;
 
-      &:nth-child(1){
+      &:nth-child(1) {
         margin-right: 10px;
       }
     }
@@ -45,19 +45,19 @@
     border: none;
     color: #fff;
     cursor: pointer;
-    
+
     &:hover {
       background-color: #0056b3;
     }
   }
 
-  &__actions{
+  &__actions {
     display: flex;
-    
-    app-button{
+
+    app-button {
       margin-right: 10px;
 
-      button:disabled{
+      button:disabled {
         background-color: #ccc !important;
         cursor: not-allowed;
       }

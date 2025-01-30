@@ -1,8 +1,8 @@
 @import '../../../styles/forms';
 @import '../../../styles/variables';
 
-.registration{
-  .form{
+.registration {
+  .form {
     background-color: #fff;
     margin-top: 40px;
     padding: 40px 10px;
@@ -10,7 +10,7 @@
 
     .input-message {
       opacity: 0;
-      &.erro{
+      &.erro {
         color: $danger;
         opacity: 1;
       }
@@ -21,11 +21,10 @@
     width: 100%;
     margin: 0 27px;
 
-    &--title{
+    &--title {
       margin-bottom: 10px;
     }
   }
-
 
   button:disabled {
     background-color: #ccc;
@@ -33,7 +32,7 @@
   }
 
   @media only screen and (max-width: 600px) {
-    .form{
+    .form {
       display: block;
       padding: 20px 15px;
     }
@@ -50,7 +49,7 @@
   align-items: center;
   margin-bottom: 0.5rem;
 
-  input[type="radio"] {
+  input[type='radio'] {
     margin-right: 0.5rem;
   }
 

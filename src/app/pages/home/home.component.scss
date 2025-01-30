@@ -1,12 +1,12 @@
 @import '../../../styles/variables';
 
-.companies{
+.companies {
   margin-top: 4rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
   gap: 1rem;
 
-  i.fa-chevron-right{
+  i.fa-chevron-right {
     position: absolute;
     right: -2px;
     background: $white;
@@ -24,8 +24,8 @@
     gap: 1rem;
     position: relative;
 
-    &::before{
-      content: "";
+    &::before {
+      content: '';
       position: absolute;
       right: 0;
       top: 0;
@@ -50,7 +50,7 @@
       border-radius: 100px;
       margin-right: 20px;
     }
-  
+
     h4 {
       margin: 0 0 0.3rem;
       font-size: 20px;
@@ -61,10 +61,10 @@
     }
   }
 
-  &-content{
+  &-content {
     padding: 0 50px;
 
-    h3{
+    h3 {
       margin-bottom: 10px;
     }
 
@@ -88,10 +88,9 @@
   }
 
   @media only screen and (max-width: 930px) {
-    .companies{
-
-      &-list{
-        &::before{
+    .companies {
+      &-list {
+        &::before {
           display: none;
         }
       }
@@ -105,7 +104,7 @@
         img {
           margin: 0;
         }
-  
+
         h4 {
           font-size: 15px;
         }
@@ -113,16 +112,13 @@
           margin: 0;
           font-size: 12px;
         }
-        
       }
 
-
-
-      &-content{
+      &-content {
         padding: 0;
       }
 
-      &-btn{
+      &-btn {
         margin: 10px 0;
       }
     }

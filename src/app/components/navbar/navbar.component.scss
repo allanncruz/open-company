@@ -4,24 +4,24 @@
   padding: 1rem 2rem;
   background-color: $secondary-color;
 
-   > .container{
+  > .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   }
+  }
 
-   &__brand{
-     display: flex;
-     align-items: center;
-   }
+  &__brand {
+    display: flex;
+    align-items: center;
+  }
 
   &__logo {
     width: 72px;
     height: 72px;
     border-radius: 72px;
     margin-right: 15px;
-    
-    &--pagetitle{
+
+    &--pagetitle {
       color: $primary-color;
     }
   }
@@ -43,27 +43,25 @@
   }
 }
 
-
-
 @media only screen and (max-width: 930px) {
   .navbar {
     padding: 1rem;
 
-    &__logo{
+    &__logo {
       width: 50px;
       height: 50px;
     }
 
-    h1{
+    h1 {
       font-size: 15px;
     }
 
-    .teste{
+    .teste {
       font-size: 20px;
       .btn {
         font-size: 13px;
         padding: 7px;
       }
     }
-  }    
+  }
 }

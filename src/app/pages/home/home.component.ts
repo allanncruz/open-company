@@ -5,7 +5,7 @@ import { Companies } from 'src/interface/types';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
   companies: Companies[] = [];
@@ -22,5 +22,4 @@ export class HomeComponent {
   selectCompany(company: Companies): void {
     this.selectedCompanies = company;
   }
-
 }

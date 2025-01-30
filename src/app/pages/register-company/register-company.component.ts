@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-register-company',
   templateUrl: './register-company.component.html',
-  styleUrls: ['./register-company.component.scss']
+  styleUrls: ['./register-company.component.scss'],
 })
 export class RegisterCompanyComponent {
   companyForm: FormGroup;
@@ -14,36 +14,39 @@ export class RegisterCompanyComponent {
   errorMessage: string = '';
   isModalVisible: boolean = false;
   states = [
-    { uf: 'AC', },
-    { uf: 'AL', },
-    { uf: 'AP', },
-    { uf: 'AM', },
-    { uf: 'BA', },
-    { uf: 'CE', },
-    { uf: 'DF', },
-    { uf: 'ES', },
-    { uf: 'GO', },
-    { uf: 'MA', },
-    { uf: 'MT', },
-    { uf: 'MS', },
-    { uf: 'MG', },
-    { uf: 'PA', },
-    { uf: 'PB', },
-    { uf: 'PR', },
-    { uf: 'PE', },
-    { uf: 'PI', },
-    { uf: 'RJ', },
-    { uf: 'RN', },
-    { uf: 'RS', },
-    { uf: 'RO', },
-    { uf: 'RR', },
-    { uf: 'SC', },
-    { uf: 'SP', },
-    { uf: 'SE', },
-    { uf: 'TO', }
+    { uf: 'AC' },
+    { uf: 'AL' },
+    { uf: 'AP' },
+    { uf: 'AM' },
+    { uf: 'BA' },
+    { uf: 'CE' },
+    { uf: 'DF' },
+    { uf: 'ES' },
+    { uf: 'GO' },
+    { uf: 'MA' },
+    { uf: 'MT' },
+    { uf: 'MS' },
+    { uf: 'MG' },
+    { uf: 'PA' },
+    { uf: 'PB' },
+    { uf: 'PR' },
+    { uf: 'PE' },
+    { uf: 'PI' },
+    { uf: 'RJ' },
+    { uf: 'RN' },
+    { uf: 'RS' },
+    { uf: 'RO' },
+    { uf: 'RR' },
+    { uf: 'SC' },
+    { uf: 'SP' },
+    { uf: 'SE' },
+    { uf: 'TO' },
   ];
 
-  constructor(private fb: FormBuilder, private http: HttpClient) {
+  constructor(
+    private fb: FormBuilder,
+    private http: HttpClient,
+  ) {
     this.companyForm = this.fb.group({
       responsible: ['', [Validators.required]],
       cpf: ['', [Validators.required]],

@@ -22,9 +22,9 @@
   position: relative;
   font-size: 20px;
 
-  .fa-circle-check{
+  .fa-circle-check {
     margin-bottom: 20px;
-    &::before{
+    &::before {
       font-size: 70px;
       color: $success;
     }
@@ -33,12 +33,12 @@
   .fa-circle-xmark {
     color: $success;
     cursor: pointer;
-    transition: .3s;
+    transition: 0.3s;
     position: absolute;
     top: -8px;
     right: -8px;
 
-    &::before{
+    &::before {
       font-size: 30px;
     }
 

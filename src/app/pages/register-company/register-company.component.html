@@ -4,25 +4,24 @@
       <h3 class="registration__section--title">Dados do solicitante</h3>
       <div class="form__group">
         <label for="responsible">Nome do responsável*</label>
-        <input 
-          class="form__input" 
-          id="responsible"
-          type="text" 
-          formControlName="responsible" 
-        />
-        <small [ngClass]="{'erro': companyForm.get('responsible')?.touched && companyForm.get('responsible')?.invalid}" class="input-message">
+        <input class="form__input" id="responsible" type="text" formControlName="responsible" />
+        <small
+          [ngClass]="{
+            erro:
+              companyForm.get('responsible')?.touched && companyForm.get('responsible')?.invalid,
+          }"
+          class="input-message"
+        >
           Nome é obrigatório.
         </small>
       </div>
       <div class="form__group">
         <label for="cpf">CPF*</label>
-        <input
-          class="form__input"
-          id="cpf"
-          type="text"
-          formControlName="cpf"
-        />
-        <small [ngClass]="{'erro': companyForm.get('cpf')?.touched && companyForm.get('cpf')?.invalid}" class="input-message">
+        <input class="form__input" id="cpf" type="text" formControlName="cpf" />
+        <small
+          [ngClass]="{ erro: companyForm.get('cpf')?.touched && companyForm.get('cpf')?.invalid }"
+          class="input-message"
+        >
           CPF é obrigatório.
         </small>
       </div>
@@ -34,35 +33,47 @@
           type="date"
           formControlName="dataNascimento"
         />
-        <small [ngClass]="{'erro': companyForm.get('dataNascimento')?.touched && companyForm.get('dataNascimento')?.invalid}" class="input-message">
+        <small
+          [ngClass]="{
+            erro:
+              companyForm.get('dataNascimento')?.touched &&
+              companyForm.get('dataNascimento')?.invalid,
+          }"
+          class="input-message"
+        >
           Data de Nascimento é obrigatório.
         </small>
       </div>
       <h3 class="registration__section--title">Dados da Empresa</h3>
       <div class="form__group">
         <label for="name">Nome Fantasia*</label>
-        <input
-          class="form__input"
-          id="name"
-          type="text"
-          formControlName="name"
-        />
-        <small [ngClass]="{'erro': companyForm.get('name')?.touched && companyForm.get('name')?.invalid}" class="input-message">
+        <input class="form__input" id="name" type="text" formControlName="name" />
+        <small
+          [ngClass]="{ erro: companyForm.get('name')?.touched && companyForm.get('name')?.invalid }"
+          class="input-message"
+        >
           Nome Fantasia é obrigatório.
         </small>
       </div>
       <div class="form__group">
         <label>Escolha sua entidade de Registro*</label>
         <div class="form__radio-group" *ngFor="let entity of entities">
-          <input 
-            type="radio" 
-            id="{{ entity }}" 
-            formControlName="entityRegistration" 
+          <input
+            type="radio"
+            id="{{ entity }}"
+            formControlName="entityRegistration"
             [value]="entity"
           />
           <label for="{{ entity }}">{{ entity }}</label>
         </div>
-        <small [ngClass]="{'erro': companyForm.get('entityRegistration')?.touched && companyForm.get('entityRegistration')?.invalid}" class="input-message">
+        <small
+          [ngClass]="{
+            erro:
+              companyForm.get('entityRegistration')?.touched &&
+              companyForm.get('entityRegistration')?.invalid,
+          }"
+          class="input-message"
+        >
           entidade de Registro Fantasia é obrigatório.
         </small>
       </div>
@@ -71,58 +82,50 @@
       <h3 class="registration__section--title">Endereço da empresa</h3>
       <div class="form__group">
         <label for="cep">CEP*</label>
-        <input
-          class="form__input"
-          id="cep"
-          type="text"
-          formControlName="cep"
-        />
-        <small [ngClass]="{'erro': companyForm.get('cep')?.touched && companyForm.get('cep')?.invalid}" class="input-message">
+        <input class="form__input" id="cep" type="text" formControlName="cep" />
+        <small
+          [ngClass]="{ erro: companyForm.get('cep')?.touched && companyForm.get('cep')?.invalid }"
+          class="input-message"
+        >
           CEP é obrigatório.
         </small>
       </div>
       <div class="form__group">
         <label for="address">Endereço*</label>
-        <input
-          class="form__input"
-          id="address"
-          type="text"
-          formControlName="address"
-        />
-        <small [ngClass]="{'erro': companyForm.get('address')?.touched && companyForm.get('address')?.invalid}" class="input-message">
+        <input class="form__input" id="address" type="text" formControlName="address" />
+        <small
+          [ngClass]="{
+            erro: companyForm.get('address')?.touched && companyForm.get('address')?.invalid,
+          }"
+          class="input-message"
+        >
           Endereço é obrigatório.
         </small>
       </div>
       <div class="form__group">
         <label for="neighborhood">Bairro*</label>
-        <input
-          class="form__input"
-          id="neighborhood"
-          type="text"
-          formControlName="neighborhood"
-        />
-        <small [ngClass]="{'erro': companyForm.get('neighborhood')?.touched && companyForm.get('neighborhood')?.invalid}" class="input-message">
+        <input class="form__input" id="neighborhood" type="text" formControlName="neighborhood" />
+        <small
+          [ngClass]="{
+            erro:
+              companyForm.get('neighborhood')?.touched && companyForm.get('neighborhood')?.invalid,
+          }"
+          class="input-message"
+        >
           Bairro é obrigatório.
         </small>
       </div>
       <div class="form__group">
         <label for="neighborhood">Complemento</label>
-        <input
-          class="form__input"
-          id="neighborhood"
-          type="text"
-          formControlName="neighborhood"
-        />
+        <input class="form__input" id="neighborhood" type="text" formControlName="neighborhood" />
       </div>
       <div class="form__group">
         <label for="city">Cidade*</label>
-        <input
-          class="form__input"
-          id="city"
-          type="text"
-          formControlName="city"
-        />
-        <small [ngClass]="{'erro': companyForm.get('city')?.touched && companyForm.get('city')?.invalid}" class="input-message">
+        <input class="form__input" id="city" type="text" formControlName="city" />
+        <small
+          [ngClass]="{ erro: companyForm.get('city')?.touched && companyForm.get('city')?.invalid }"
+          class="input-message"
+        >
           Cidade é obrigatório.
         </small>
       </div>
@@ -132,11 +135,14 @@
           <option value="">Selecione</option>
           <option *ngFor="let state of states" [value]="state.uf">{{ state.uf }}</option>
         </select>
-        <small [ngClass]="{'erro': companyForm.get('uf')?.touched && companyForm.get('uf')?.invalid}" class="input-message">
+        <small
+          [ngClass]="{ erro: companyForm.get('uf')?.touched && companyForm.get('uf')?.invalid }"
+          class="input-message"
+        >
           Estado é obrigatório.
         </small>
       </div>
-      <app-button (click)="onSubmit()" type="submit" >Enviar</app-button>
+      <app-button (click)="onSubmit()" type="submit">Enviar</app-button>
       <div>
         <p *ngIf="successMessage" class="success-text">{{ successMessage }}</p>
         <p *ngIf="errorMessage" class="error-text">{{ errorMessage }}</p>
