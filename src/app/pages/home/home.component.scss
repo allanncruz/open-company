@@ -3,7 +3,7 @@
 .companies{
   margin-top: 4rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
   gap: 1rem;
 
   i.fa-chevron-right{
@@ -84,6 +84,47 @@
       list-style: none;
       font-size: 14px;
       line-height: 25px;
+    }
+  }
+
+  @media only screen and (max-width: 930px) {
+    .companies{
+
+      &-list{
+        &::before{
+          display: none;
+        }
+      }
+
+      &-item,
+      &-item__info {
+        display: block;
+        padding: 0.75rem 0.6rem;
+        text-align: center;
+
+        img {
+          margin: 0;
+        }
+  
+        h4 {
+          font-size: 15px;
+        }
+        p {
+          margin: 0;
+          font-size: 12px;
+        }
+        
+      }
+
+
+
+      &-content{
+        padding: 0;
+      }
+
+      &-btn{
+        margin: 10px 0;
+      }
     }
   }
 }
