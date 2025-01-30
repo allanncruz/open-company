@@ -5,7 +5,7 @@ import { RegisterCompanyComponent } from './pages/register-company/register-comp
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'register-company', component: RegisterCompanyComponent },
+  { path: 'solicitar-abertura', component: RegisterCompanyComponent },
 ];
 
 @NgModule({

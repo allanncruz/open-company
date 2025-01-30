@@ -53,7 +53,7 @@
       </div>
       <div class="form__group">
         <label>Escolha sua entidade de Registro*</label>
-        <div class="form__radio-group" *ngFor="let entity of entityRegistration">
+        <div class="form__radio-group" *ngFor="let entity of entities">
           <input 
             type="radio" 
             id="{{ entity }}" 
@@ -77,7 +77,7 @@
           type="text"
           formControlName="cep"
         />
-        <small [ngClass]="{'erro': companyForm.get('entityRegistration')?.touched && companyForm.get('entityRegistration')?.invalid}" class="input-message">
+        <small [ngClass]="{'erro': companyForm.get('cep')?.touched && companyForm.get('cep')?.invalid}" class="input-message">
           CEP é obrigatório.
         </small>
       </div>
@@ -89,7 +89,7 @@
           type="text"
           formControlName="address"
         />
-        <small [ngClass]="{'erro': companyForm.get('entityRegistration')?.touched && companyForm.get('entityRegistration')?.invalid}" class="input-message">
+        <small [ngClass]="{'erro': companyForm.get('address')?.touched && companyForm.get('address')?.invalid}" class="input-message">
           Endereço é obrigatório.
         </small>
       </div>
@@ -101,7 +101,7 @@
           type="text"
           formControlName="neighborhood"
         />
-        <small [ngClass]="{'erro': companyForm.get('entityRegistration')?.touched && companyForm.get('entityRegistration')?.invalid}" class="input-message">
+        <small [ngClass]="{'erro': companyForm.get('neighborhood')?.touched && companyForm.get('neighborhood')?.invalid}" class="input-message">
           Bairro é obrigatório.
         </small>
       </div>
@@ -122,7 +122,7 @@
           type="text"
           formControlName="city"
         />
-        <small [ngClass]="{'erro': companyForm.get('entityRegistration')?.touched && companyForm.get('entityRegistration')?.invalid}" class="input-message">
+        <small [ngClass]="{'erro': companyForm.get('city')?.touched && companyForm.get('city')?.invalid}" class="input-message">
           Cidade é obrigatório.
         </small>
       </div>
@@ -130,13 +130,13 @@
         <label for="uf">Estado*</label>
         <select class="form__select" id="uf" formControlName="uf">
           <option value="">Selecione</option>
-          <option *ngFor="let state of uf" [value]="uf">{{ state }}</option>
+          <option *ngFor="let state of states" [value]="state.uf">{{ state.uf }}</option>
         </select>
-        <small [ngClass]="{'erro': companyForm.get('entityRegistration')?.touched && companyForm.get('entityRegistration')?.invalid}" class="input-message">
+        <small [ngClass]="{'erro': companyForm.get('uf')?.touched && companyForm.get('uf')?.invalid}" class="input-message">
           Estado é obrigatório.
         </small>
       </div>
-      <app-button type="submit" >Enviar</app-button>
+      <app-button (click)="onSubmit()" type="submit" >Enviar</app-button>
       <div>
         <p *ngIf="successMessage" class="success-text">{{ successMessage }}</p>
         <p *ngIf="errorMessage" class="error-text">{{ errorMessage }}</p>

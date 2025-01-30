@@ -9,47 +9,47 @@ import { HttpClient } from '@angular/common/http';
 })
 export class RegisterCompanyComponent {
   companyForm: FormGroup;
-  entityRegistration: string[] = ['Cartório', 'Junta Comercial', 'OAB', 'RFB'];
+  entities: string[] = ['Cartório', 'Junta Comercial', 'OAB', 'RFB'];
   successMessage: string = '';
   errorMessage: string = '';
-  uf = [
-    'AC',
-    'AL',
-    'AP',
-    'AM',
-    'BA',
-    'CE',
-    'DF',
-    'ES',
-    'GO',
-    'MA',
-    'MT',
-    'MS',
-    'MG',
-    'PA',
-    'PB',
-    'PR',
-    'PE',
-    'PI',
-    'RJ',
-    'RN',
-    'RS',
-    'RO',
-    'RR',
-    'SC',
-    'SP',
-    'SE',
-    'TO',
+  states = [
+    { uf: 'AC', },
+    { uf: 'AL', },
+    { uf: 'AP', },
+    { uf: 'AM', },
+    { uf: 'BA', },
+    { uf: 'CE', },
+    { uf: 'DF', },
+    { uf: 'ES', },
+    { uf: 'GO', },
+    { uf: 'MA', },
+    { uf: 'MT', },
+    { uf: 'MS', },
+    { uf: 'MG', },
+    { uf: 'PA', },
+    { uf: 'PB', },
+    { uf: 'PR', },
+    { uf: 'PE', },
+    { uf: 'PI', },
+    { uf: 'RJ', },
+    { uf: 'RN', },
+    { uf: 'RS', },
+    { uf: 'RO', },
+    { uf: 'RR', },
+    { uf: 'SC', },
+    { uf: 'SP', },
+    { uf: 'SE', },
+    { uf: 'TO', }
   ];
 
   constructor(private fb: FormBuilder, private http: HttpClient) {
     this.companyForm = this.fb.group({
       responsible: ['', [Validators.required]],
-      cpf: ['', [Validators.required], Validators.pattern(/^\d{11}$/)],
+      cpf: ['', [Validators.required]],
       dataNascimento: ['', Validators.required],
       name: ['', Validators.required],
       entityRegistration: ['', Validators.required],
-      cep: ['', [Validators.required, Validators.minLength(10)]],
+      cep: ['', [Validators.required]],
       address: ['', Validators.required],
       neighborhood: ['', Validators.required],
       complement: [''],

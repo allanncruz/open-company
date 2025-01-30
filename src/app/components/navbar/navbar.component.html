@@ -1,9 +1,11 @@
 <nav class="navbar">
   <div class="container">
-    <div class="navbar__brand">
-      <img class="navbar__logo" src="assets/vox.jpeg" alt="Vox Técnologia" />
-      <h1 class="navbar__logo--pagetitle">Titulo dinamico da página</h1>
-    </div>
-    <app-button icon="fa-solid fa-circle-plus" size="lg">Solicitar abertura</app-button>
+    <a routerLink="/">
+      <div class="navbar__brand">
+        <img class="navbar__logo" src="assets/vox.jpeg" alt="Vox Técnologia" />
+        <h1 class="navbar__logo--pagetitle">Titulo dinamico da página</h1>
+      </div>
+    </a>
+    <app-button icon="fa-solid fa-circle-plus" size="lg" route="/solicitar-abertura">Solicitar abertura</app-button>
   </div>
 </nav>

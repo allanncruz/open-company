@@ -1,4 +1,4 @@
-<button class="btn" [ngClass]="size">
+<button class="btn" [ngClass]="size" (click)="navigate()">
   <ng-container *ngIf="icon">
     <i [class]="icon" class="icon"></i>
   </ng-container>
