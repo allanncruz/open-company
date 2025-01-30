@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RegisterCompanyComponent } from './pages/register-company/register-company.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ConfirmationDialogComponent } from './components/confirmation-dialog/confirmation-dialog.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     NavbarComponent,
     ButtonComponent,
     HomeComponent,
-    RegisterCompanyComponent
+    RegisterCompanyComponent,
+    ConfirmationDialogComponent
   ],
   imports: [
     BrowserModule,

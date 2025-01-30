@@ -1,0 +1,49 @@
+@import '../../../styles/variables';
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: $white;
+  padding: 5rem 2.5rem;
+  margin: 1rem;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  font-size: 20px;
+
+  .fa-circle-check{
+    margin-bottom: 20px;
+    &::before{
+      font-size: 70px;
+      color: $success;
+    }
+  }
+
+  .fa-circle-xmark {
+    color: $success;
+    cursor: pointer;
+    transition: .3s;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+
+    &::before{
+      font-size: 30px;
+    }
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+}

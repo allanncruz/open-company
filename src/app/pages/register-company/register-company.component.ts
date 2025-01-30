@@ -12,6 +12,7 @@ export class RegisterCompanyComponent {
   entities: string[] = ['Cartório', 'Junta Comercial', 'OAB', 'RFB'];
   successMessage: string = '';
   errorMessage: string = '';
+  isModalVisible: boolean = false;
   states = [
     { uf: 'AC', },
     { uf: 'AL', },
@@ -63,8 +64,9 @@ export class RegisterCompanyComponent {
       const newCompany = this.companyForm.value;
       this.http.post('http://localhost:3000/companies', newCompany).subscribe({
         next: () => {
-          this.successMessage = 'Empresa cadastrada com sucesso!';
+          this.successMessage = 'Solicitaçao cadastrada com sucesso';
           this.errorMessage = '';
+          this.isModalVisible = true;
           this.companyForm.reset();
         },
         error: () => {
@@ -82,5 +84,9 @@ export class RegisterCompanyComponent {
       const control = this.companyForm.get(field);
       control?.markAsTouched();
     });
+  }
+
+  closeModal(): void {
+    this.isModalVisible = false;
   }
 }

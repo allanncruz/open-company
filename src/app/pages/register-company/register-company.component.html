@@ -143,4 +143,9 @@
       </div>
     </div>
   </form>
+  <app-confirmation-dialog
+    [message]="successMessage"
+    [isVisible]="isModalVisible"
+    (close)="closeModal()"
+  ></app-confirmation-dialog>
 </div>

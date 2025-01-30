@@ -1,0 +1,7 @@
+<div class="modal-overlay" *ngIf="isVisible">
+  <div class="modal">
+    <i class="fa-regular fa-circle-check"></i>
+    <p>{{ message }}</p>
+    <i (click)="closeModal()" class="fa-solid fa-circle-xmark"></i>
+  </div>
+</div>
