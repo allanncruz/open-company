@@ -2,6 +2,14 @@
 
 Desafio técnico Vox Tecnologia
 
+## Pré-requisitos
+
+Certifique-se de ter o Node.js e o npm instalados em sua máquina. Recomendamos usar a versão LTS do Node.js.
+
+- [Node.js >= 18.x](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
+- [Angular CLI >= 16.x](https://www.npmjs.com/package/@angular/cli/v/16.2.0/)
+
 Instale as dependências do projeto:
 
 ```bash
